@@ -34,11 +34,11 @@ function App() {
     time: '10:31'
   }];
 
-  let array = [] as MessageItem[];
+  let array: MessageItem[] = [];
 
   for (let i = 0; i < messages.length; i++) {
     array.push({
-      from:{
+      from: {
         name: messages[i].from.name,
       },
       message:
@@ -48,7 +48,7 @@ function App() {
         time: messages[i].time,
         text: messages[i].text,
       }
-      
+
     });
 
   }

@@ -4,7 +4,7 @@ import Message from "./Message";
 import Response from "./Response";
 import Typing from "./Typing";
 
-function MessageHistory({ list = [] as MessageItem[] }) {
+function MessageHistory({ list } : {list : MessageItem[]}) {
 
     let messages = [];
 
